@@ -2,7 +2,8 @@
 
 def calculate_price(price, cash_coupon, percent_coupon):
     if price < 10:
-        return 5.95
+        shipping = 5.95
+        return 0
 
 
 def main():
