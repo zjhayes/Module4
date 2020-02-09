@@ -77,6 +77,42 @@ class MyTestCase(unittest.TestCase):
         price = calculate_price(15, 15, 20)
         self.assertEquals(7.95, price)
 
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 5, 10)
+        self.assertEquals(17.49, price)
+
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 5, 15)
+        self.assertEquals(16.96, price)
+
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 5, 20)
+        self.assertEquals(16.43, price)
+
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 10, 10)
+        self.assertEquals(12.72, price)
+
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 10, 15)
+        self.assertEquals(12.46, price)
+
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 10, 20)
+        self.assertEquals(12.19, price)
+
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 15, 10)
+        self.assertEquals(7.95, price)
+
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 15, 15)
+        self.assertEquals(7.95, price)
+
+    def test_price_under_between_thirty_fifty(self):
+        price = calculate_price(25, 15, 20)
+        self.assertEquals(7.95, price)
+
 
 if __name__ == '__main__':
     unittest.main()
