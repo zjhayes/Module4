@@ -8,13 +8,15 @@ def calculate_price(price, cash_coupon, percent_coupon):
     total_after_tax = total_after_coupon + tax
     if price < 10:
         shipping = 5.95
+    elif price < 30:
+        shipping = 7.95
     else:
         shipping = 0
     return round(total_after_tax + shipping, 2)
 
 
 def main():
-    print(calculate_price(9, 15, 20))
+    print(calculate_price(15, 15, 20))
 
 
 if __name__== "__main__":
